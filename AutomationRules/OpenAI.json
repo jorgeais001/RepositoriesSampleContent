@@ -25,10 +25,10 @@
                         {
                             "conditionType": "Property",
                             "conditionProperties": {
-                                "propertyName": "IncidentTactics",
-                                "operator": "Contains",
+                                "propertyName": "IncidentStatus",
+                                "operator": "Equals",
                                 "propertyValues": [
-                                    "Persistence"
+                                    "New"
                                 ]
                             }
                         }
@@ -39,11 +39,8 @@
                         "order": 1,
                         "actionType": "RunPlaybook",
                         "actionConfiguration": {
-                            "owner": {
-                                "objectId": "b18ef471-be11-439d-9279-5ce4e18b976e",
-                                "email": "SampleEmail@Contoso.com",
-                                "userPrincipalName": "SampleUser@Contoso.com"
-                            }
+                            "logicAppResourceId": "/subscriptions/238fdc81-d80d-4922-a829-67e5567d4530/resourceGroups/SOC_Accelerator/providers/Microsoft.Logic/workflows/AzureOpenAI_Sentinel_IR"
+                            "tenantId": "wwwwwwww" 
                         }
                     }
                 ]
