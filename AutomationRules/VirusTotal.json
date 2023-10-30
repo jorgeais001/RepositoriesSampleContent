@@ -25,6 +25,16 @@
                         {
                             "conditionType": "Property",
                             "conditionProperties": {
+                                "propertyName": "IncidentRelatedAnalyticRuleIds",
+                                "operator": "Contains",
+                                "propertyValues": [
+                                    "All"
+                                ]
+                            }
+                        },
+                        {      
+                            "conditionType": "Property",
+                            "conditionProperties": {
                                 "propertyName": "IncidentStatus",
                                 "operator": "Equals",
                                 "propertyValues": [
