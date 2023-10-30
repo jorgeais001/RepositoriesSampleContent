@@ -40,7 +40,7 @@
                         "actionType": "RunPlaybook",
                         "actionConfiguration": {
                             "logicAppResourceId": "/subscriptions/238fdc81-d80d-4922-a829-67e5567d4530/resourceGroups/SOC_Accelerator/providers/Microsoft.Logic/workflows/AzureOpenAI_Sentinel_IR"
-                            "tenantId": "wwwwwwww" 
+                            "tenantId": "f32b97f0-efb8-4bc3-91ee-18a6e5f635c9" 
                         }
                     }
                 ]
