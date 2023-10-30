@@ -14,7 +14,7 @@
             "kind": "Scheduled",
             "apiVersion": "2019-01-01-preview",
             "properties": {
-                "displayName": "Repositories automation rule 1",
+                "displayName": "OpenAI Lookup",
                 "order": 1,
                 "triggeringLogic": {
                     "isEnabled": true,
@@ -37,7 +37,7 @@
                 "actions": [
                     {
                         "order": 1,
-                        "actionType": "ModifyProperties",
+                        "actionType": "RunPlaybook",
                         "actionConfiguration": {
                             "owner": {
                                 "objectId": "b18ef471-be11-439d-9279-5ce4e18b976e",
