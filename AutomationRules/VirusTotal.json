@@ -8,13 +8,13 @@
     },
     "resources": [
         {
-            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/automationRules/85f2eac9-43f1-480e-b8ad-473375c195c0')]",
-            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/85f2eac9-43f1-480e-b8ad-473375c195c0')]",
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/automationRules/b4d20f1d-1a4e-4321-8728-74dc17f88340')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/b4d20f1d-1a4e-4321-8728-74dc17f88340')]",
             "type": "Microsoft.OperationalInsights/workspaces/providers/automationRules",
             "kind": "Scheduled",
             "apiVersion": "2019-01-01-preview",
             "properties": {
-                "displayName": "OpenAI Lookup",
+                "displayName": "VirusTotal Lookup",
                 "order": 1,
                 "triggeringLogic": {
                     "isEnabled": true,
@@ -39,7 +39,7 @@
                         "order": 1,
                         "actionType": "RunPlaybook",
                         "actionConfiguration": {
-                            "logicAppResourceId": "/subscriptions/238fdc81-d80d-4922-a829-67e5567d4530/resourceGroups/SOC_Accelerator/providers/Microsoft.Logic/workflows/AzureOpenAI_Sentinel_IR"
+                            "logicAppResourceId": "/subscriptions/b4d20f1d-1a4e-4321-8728-74dc17f88340/resourceGroups/AIS-SharedSvcs-rg/providers/Microsoft.Logic/workflows/Get-VirusTotalDomainReport-IncidentTriggered"
                             "tenantId": "f32b97f0-efb8-4bc3-91ee-18a6e5f635c9" 
                         }
                     }
