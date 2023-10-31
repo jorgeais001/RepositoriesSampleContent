@@ -17,7 +17,7 @@
     },
     "workbookSourceId": {
       "type": "string",
-      "defaultValue": "/subscriptions/238fdc81-d80d-4922-a829-67e5567d4530/resourcegroups/soc_accelerator/providers/microsoft.operationalinsights/workspaces/socaccelerator",
+      "defaultValue": "/subscriptions/b4d20f1d-1a4e-4321-8728-74dc17f88340/resourcegroups/AIS-SharedSvcs-rg/providers/microsoft.operationalinsights/workspaces/AIS-sharedsvcs-log",
       "metadata": {
         "description": "The id of resource instance to which the workbook will be associated"
       }
