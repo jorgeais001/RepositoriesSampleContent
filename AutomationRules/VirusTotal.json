@@ -48,7 +48,7 @@
                         "order": 1,
                         "actionType": "RunPlaybook",
                         "actionConfiguration": {
-                            "logicAppResourceId": "/subscriptions/b4d20f1d-1a4e-4321-8728-74dc17f88340/resourceGroups/ais-sharedsvcs-rg/providers/Microsoft.Logic/workflows/Get-VirusTotalDomainReport-IncidentTriggered"
+                            "logicAppResourceId": "/subscriptions/b4d20f1d-1a4e-4321-8728-74dc17f88340/resourceGroups/ais-sharedsvcs-rg/providers/Microsoft.Logic/workflows/Get-VirusTotalDomainReport-IncidentTriggered",
                             "tenantId": "f32b97f0-efb8-4bc3-91ee-18a6e5f635c9" 
                         }
                     }
