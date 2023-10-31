@@ -8,8 +8,8 @@
     },
     "resources": [
         {
-            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/automationRules/aaab12ed-61e3-48ff-812a-0596d5a63195')]",
-            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/aaab12ed-61e3-48ff-812a-0596d5a63195')]",
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/automationRules/f708a978-e14b-46c3-97cc-1916d73aee9d')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/f708a978-e14b-46c3-97cc-1916d73aee9d')]",
             "type": "Microsoft.OperationalInsights/workspaces/providers/automationRules",
             "apiVersion": "2019-01-01-preview",
             "properties": {
