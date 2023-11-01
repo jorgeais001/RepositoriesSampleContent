@@ -1,31 +1,32 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "workspace": {
-      "type": "String"
-    },
-    "formattedTimeNow": {
+    "workbookDisplayName": {
       "type": "string",
-      "defaultValue": "[utcNow('g')]",
+      "defaultValue": "NISTSP80053workbook - OCTO",
       "metadata": {
-        "description": "Appended to workbook displayNames to make them unique"
+        "description": "The friendly name for the workbook that is used in the Gallery or Saved List.  This name must be unique within a resource group."
       }
     },
-    "workbook-id": {
+    "workbookType": {
       "type": "string",
-      "defaultValue": "288fe65c-4ea5-450a-8aa9-90ba4abd445d",
-      "minLength": 1,
+      "defaultValue": "sentinel",
       "metadata": {
-        "description": "Unique id for the workbook"
+        "description": "The gallery that the workbook will been shown under. Supported values include workbook, tsg, etc. Usually, this is 'workbook'"
       }
     },
-    "workbook-name": {
+    "workbookSourceId": {
       "type": "string",
-      "defaultValue": "NISTSP80053",
-      "minLength": 1,
+      "defaultValue": "/subscriptions/b4d20f1d-1a4e-4321-8728-74dc17f88340/resourcegroups/AIS-SharedSvcs-rg/providers/microsoft.operationalinsights/workspaces/AIS-sharedsvcs-log",
       "metadata": {
-        "description": "Name for the workbook"
+        "description": "The id of resource instance to which the workbook will be associated"
+      }
+    },
+    "workbookId": {
+      "type": "string",
+      "defaultValue": "[newGuid()]",
+      "metadata": {
+        "description": "The unique guid for this workbook instance"
       }
     }
   },
@@ -43,8 +44,14 @@
         "version": "1.0",
         "sourceId": "[parameters('workbookSourceId')]",
         "category": "[parameters('workbookType')]"
-        "etag": "*"
       }
     }
   ],
+  "outputs": {
+    "workbookId": {
+      "type": "string",
+      "value": "[resourceId( 'microsoft.insights/workbooks', parameters('workbookId'))]"
+    }
+  },
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#"
 }
